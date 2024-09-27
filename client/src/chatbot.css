@@ -1,0 +1,222 @@
+.chatboxcontainer {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  background: #f1f1f1;
+}
+
+.chatboxcontainer {
+  /* --primaryGradient: linear-gradient(93.12deg, #0d1b75 0.52%, #3c4ba7 100%); */
+  --primaryGradient: linear-gradient(268.91deg, #d6d6d6 -2.14%, #ffffff 99.69%);
+  /* --secondaryGradient: linear-gradient(268.91deg, #0d1b75 -2.14%, #3c4ba7 99.69%); */
+  --secondaryGradient: linear-gradient(268.91deg, #d6d6d6 -2.14%, #ffffff 99.69%);
+  --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
+  --primary: #3c4ba7;
+}
+
+/* CHATBOX */
+.chatbox {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  z-index: 123456;
+}
+
+/* CONTENT IS CLOSE */
+.chatboxsupport {
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+  width: 1200px;
+  height: 1500px;
+  z-index: -123456;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+/* CONTENT ISOPEN */
+.chatboxactive {
+  transform: translateY(-40px);
+  z-index: 123456;
+  opacity: 1;
+}
+
+/* BUTTON */
+.chatboxbutton {
+  text-align: right;
+}
+
+.sendbutton {
+  padding: 6px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* HEADER */
+.chatboxheader {
+  position: sticky;
+  top: 0;
+  background: orange;
+}
+
+.chatboxsupport {
+  background: #f9f9f9;
+  height: 550px;
+  width: 450px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* HEADER */
+.chatboxheader {
+  background: var(--primaryGradient);
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  padding: 15px 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: var(--primaryBoxShadow);
+}
+
+.chatboximageheader {
+  margin-right: 10px;
+}
+
+.chatboxheadingheader {
+  font-size: 1.2rem;
+  color: rgb(9, 9, 9);
+}
+
+.chatboxdescriptionheader {
+  font-size: 0.9rem;
+  color: rgb(43, 43, 43);
+}
+
+/* MESSAGES */
+.chatboxmessages {
+  height: 30rem;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.chatboxmessages {
+  padding: 0 20px;
+}
+
+.messagesitem {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background: #e0e0e0;
+  padding: 8px 12px;
+  max-width: 70%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.messagesitemoperator {
+  width: fit-content;
+  display: flex;
+  align-self: self-end;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: var(--primary);
+  color: white;
+}
+
+/* FOOTER */
+.chatboxfooter {
+  position: sticky;
+  bottom: 0;
+}
+
+.chatboxfooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background: rgb(252, 250, 250);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 0px;
+}
+
+.chatboxfooter input {
+  width: 80%;
+  border: #0d1b75;
+  padding: 10px 10px;
+  border-radius: 30px;
+  text-align: left;
+}
+
+.chatboxsendfooter {
+  color: #0d1b75;
+  padding-right: 15px;
+}
+
+.chatbotimage {
+  aspect-ratio: 1/1;
+  width: 3rem;
+  height: 3rem;
+  padding: 5px;
+}
+
+.chatboxbutton button,
+.chatboxbutton button:focus,
+.chatboxbutton button:visited {
+  padding: 10px;
+  background: #a9b5ff;
+  border: none;
+  outline: none;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+@keyframes animloaderBack {
+  0%,
+  30%,
+  70% {
+    transform: translateY(0px);
+  }
+  20%,
+  40%,
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: 4px 4px 12px 2px rgba(255, 61, 0, 0.75);
+    width: 34px;
+    height: 34px;
+    background-position: -44px -44px;
+    background-size: 100px 100px;
+  }
+  100% {
+    box-shadow: 2px 2px 8px 0px rgba(255, 61, 0, 0.5);
+    width: 30px;
+    height: 28px;
+    background-position: -36px -36px;
+    background-size: 80px 80px;
+  }
+}
