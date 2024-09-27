@@ -11,8 +11,8 @@ function Navbar() {
         </a>
         <div className="flex mt-1">
           <div className="text-black text-xl font-roboto tracking-wide flex gap-6 py-1 mr-6">
-            <Link className="" to="/summarise">
-              <p className="py-2 mr-2">Summarise</p>
+            <Link className="" to="/summarizer">
+              <p className="py-2 mr-2">Summarizer</p>
             </Link>
             <Link className="" to="/resources">
               <p className="mr-2 py-2"></p>
