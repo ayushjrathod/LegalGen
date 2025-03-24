@@ -1,13 +1,11 @@
 
-Team OutOfBounds
-
-We have built a fullstack solution for Legal Document Generation from scratch, making it easier for legal as well as normal users to generate legal documents like 
-1.) Sale deeds
-2.) Rent Agreements
-3.) Agreement of Sales
-4.) Non Disclosure ( B2B )
-5.) Non Disclosure (Empployer to Employee)
-6.) Deed of Sale of land and sale of flat, 
+A fullstack solution for Legal Document Generation from scratch, making it easier for legal as well as normal users to generate legal documents like 
+1. Sale deeds
+2. Rent Agreements
+3. Agreement of Sales
+4. Non Disclosure ( B2B )
+5. Non Disclosure (Empployer to Employee)
+6. Deed of Sale of land and sale of flat, 
 
 And many more...
 
